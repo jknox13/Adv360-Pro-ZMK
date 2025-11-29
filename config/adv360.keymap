@@ -114,43 +114,43 @@
         lang_mac {
             display-name = "symbols";
             bindings = <
-&none  &none            &none        &none        &none         &none  &none                                  &none  &none  &none  &none            &none  &none  &none
-&none  &none            &none        &none        &none         &none  &none                                  &none  &none  &none  &french_u_grave  &none  &none  &none
-&none  &french_a_grave  &none        &french_cs   &none         &none  &none  &none  &none      &none  &none  &none  &none  &none  &french_e_acute  &none  &none  &none
-&none  &serbian_zh      &serbian_sh  &serbian_ch  &serbian_chj  &none                &none      &none                &none  &none  &french_e_grave  &none  &none  &none
-&none  &none            &none        &none        &none                &none  &none  &none      &none  &none  &none         &none  &none            &none  &none  &none
+&none  &none            &none        &none        &none         &none  &none                                       &none   &none  &none  &none            &none  &none  &none
+&none  &none            &none        &none        &none         &none  &none                                       &none   &none  &none  &french_u_grave  &none  &none  &none
+&none  &french_a_grave  &none        &french_cs   &none         &none  &none   &trans  &trans      &trans  &trans  &none   &none  &none  &french_e_acute  &none  &none  &none
+&none  &serbian_zh      &serbian_sh  &serbian_ch  &serbian_chj  &none                  &trans      &trans                  &none  &none  &french_e_grave  &none  &none  &none
+&none  &none            &none        &none        &none                &trans  &trans  &trans      &trans  &trans  &trans         &none  &none            &none  &none  &none
             >;
         };
 
         symbols {
             display-name = "symbols";
             bindings = <
-&none   &none         &none         &none         &none         &none          &none                                       &none   &none          &none          &none         &none          &none         &none
-&trans  &none         &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(DLLR)  &kp LS(PRCNT)  &none                                       &none   &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(POUND)  &none         &none
-&trans  &kp BSLH      &kp LS(LPAR)  &kp LS(RPAR)  &kp SQT       &kp GRAVE      &none   &trans  &trans      &trans  &trans  &none   &kp LS(PIPE)   &kp MINUS      &kp EQUAL     &kp LS(PLUS)   &kp LS(EXCL)  &none
-&none   &euro_symbol  &kp LBKT      &kp RBKT      &kp LS(DQT)   &kp LS(AT)                     &trans      &trans                  &kp LS(TILDE)  &kp LS(UNDER)  &kp LS(LT)    &kp LS(GT)     &trans        &none
-&none   &none         &none         &none         &none                        &trans  &trans  &trans      &trans  &trans  &trans                 &none          &none         &none          &none         &none
+&none  &none         &none         &none         &none         &none          &none                                       &none   &none          &none          &none         &none          &none         &none
+&none  &none         &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(DLLR)  &kp LS(PRCNT)  &none                                       &none   &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(POUND)  &none         &none
+&none  &kp BSLH      &kp LS(LPAR)  &kp LS(RPAR)  &kp SQT       &kp GRAVE      &none   &trans  &trans      &trans  &trans  &none   &kp LS(PIPE)   &kp MINUS      &kp EQUAL     &kp LS(PLUS)   &kp LS(EXCL)  &none
+&none  &euro_symbol  &kp LBKT      &kp RBKT      &kp LS(DQT)   &kp LS(AT)                     &trans      &trans                  &kp LS(TILDE)  &kp LS(UNDER)  &kp LS(LT)    &kp LS(GT)     &trans        &none
+&none  &none         &none         &none         &none                        &trans  &trans  &trans      &trans  &trans  &trans                 &none          &none         &none          &none         &none
             >;
         };
 
         direction {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans          &trans        &trans           &trans
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none           &none           &none         &none            &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none           &none           &none         &none            &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none  &none           &none           &none         &none            &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none           &none           &none         &none            &none
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&none      &none  &none  &none     &none      &none  &trans                                                   &none      &none  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &none
-&kp TAB    &none  &none  &none     &none      &none  &none                                                    &none      &none  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &none
-&kp ESC    &none  &none  &none     &none      &none  &to 0     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
-&kp LSHFT  &none  &none  &none     &none      &none                       &kp HOME      &kp PG_UP                        &none  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &none  &none  &kp LEFT  &kp RIGHT         &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0         &kp UP      &kp DOWN      &kp KP_DOT     &none            &mo 2
+&none   &none  &none  &none     &none      &none  &trans                                      &none   &none  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &none
+&trans  &none  &none  &none     &none      &none  &none                                       &none   &none  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &none
+&trans  &none  &none  &none     &none      &none  &to 0   &trans  &trans      &trans  &trans  &none   &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
+&none   &none  &none  &none     &none      &none                  &trans      &trans                  &none  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &none
+&none   &none  &none  &kp LEFT  &kp RIGHT         &trans  &trans  &trans      &trans  &trans  &trans         &kp UP      &kp DOWN      &kp KP_DOT     &none            &none
             >;
         };
 
