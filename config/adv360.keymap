@@ -25,6 +25,69 @@
             bindings = <&kp RA(V) &kp Z>;
             label = "SERBIAN_ZH";
         };
+
+        serbian_dj: serbian_dj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(L) &kp D>;
+            label = "SERBIAN_DJ";
+        };
+
+        serbian_sh: serbian_sh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(V) &kp S>;
+            label = "SERBIAN_SH";
+        };
+
+        serbian_ch: serbian_ch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(V) &kp C>;
+            label = "SERBIAN_CH";
+        };
+
+        serbian_chj: serbian_chj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(E) &kp C>;
+            label = "SERBIAN_CHJ";
+        };
+
+        french_cs: french_cs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(C) &kp C>;
+            label = "FRENCH_CS";
+        };
+
+        french_a_grave: french_a_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(GRAVE) &kp A>;
+            label = "FRENCH_A_GRAVE";
+        };
+
+        french_e_grave: french_e_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(GRAVE) &kp E>;
+            label = "FRENCH_E_GRAVE";
+        };
+
+        french_u_grave: french_u_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(GRAVE) &kp U>;
+            label = "FRENCH_U_GRAVE";
+        };
+
+        french_e_acute: french_e_acute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(E) &kp E>;
+            label = "FRENCH_E_ACUTE";
+        };
     };
 
     keymap {
@@ -33,22 +96,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&none    &kp N1            &kp N2  &kp N3    &kp N4     &kp N5  &none                                                                                                &none                &kp N6   &kp N7   &kp N8     &kp N9   &kp N0             &none
-&kp TAB  &kp Q             &kp W   &kp F     &kp P      &kp B   &none                                                                                                &none                &kp J    &kp L    &kp U      &kp Y    &kp SEMICOLON      &none
-&kp ESC  &mt LEFT_SHIFT A  &kp R   &kp S     &lt 2 T    &kp G   &tog 3                   &kp LCTRL             &kp LALT      &kp LGUI   &kp RCTRL                    &none                &kp M    &lt 2 N  &kp E      &kp I    &mt RIGHT_SHIFT O  &none
-&none    &kp Z             &kp X   &kp C     &kp D      &kp V                                                  &kp HOME      &kp PG_UP                                                    &lt 1 K  &kp H    &kp COMMA  &kp DOT  &kp FSLH           &none
-&tog 4   &none             &none   &kp LEFT  &kp RIGHT          &mt LCTRL LS(BACKSPACE)  &mt LEFT_ALT LS(TAB)  &kp END       &kp PG_DN  &mt LC(LS(RIGHT_ALT)) ENTER  &mt RCTRL LS(SPACE)           &kp UP   &kp DOWN   &none    &none              &tog 5
+&none    &kp N1            &kp N2  &kp N3    &kp N4     &kp N5  &none                                                                                                &none                &kp N6  &kp N7   &kp N8     &kp N9   &kp N0             &none
+&kp TAB  &kp Q             &kp W   &kp F     &kp P      &kp B   &none                                                                                                &none                &kp J   &kp L    &kp U      &kp Y    &kp SEMICOLON      &none
+&kp ESC  &mt LEFT_SHIFT A  &kp R   &kp S     &lt 2 T    &kp G   &to 3                    &kp LCTRL             &kp LALT      &kp LGUI   &kp RCTRL                    &none                &kp M   &lt 2 N  &kp E      &kp I    &mt RIGHT_SHIFT O  &none
+&none    &kp Z             &kp X   &kp C     &kp D      &kp V                                                  &kp HOME      &kp PG_UP                                                    &kp K   &lt 1 H  &kp COMMA  &kp DOT  &kp FSLH           &none
+&to 4    &none             &none   &kp LEFT  &kp RIGHT          &mt LCTRL LS(BACKSPACE)  &mt LEFT_ALT LS(TAB)  &kp END       &kp PG_DN  &mt LC(LS(RIGHT_ALT)) ENTER  &mt RCTRL LS(SPACE)          &kp UP   &kp DOWN   &none    &none              &tog 5
             >;
         };
 
         lang_mac {
             display-name = "symbols";
             bindings = <
-&none  &none        &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none        &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none        &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &serbian_zh  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none        &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+&none  &none            &none        &none        &none         &none  &none                                  &none  &none  &none  &none            &none  &none  &none
+&none  &none            &none        &none        &none         &none  &none                                  &none  &none  &none  &french_u_grave  &none  &none  &none
+&none  &french_a_grave  &none        &french_cs   &none         &none  &none  &none  &none      &none  &none  &none  &none  &none  &french_e_acute  &none  &none  &none
+&none  &serbian_zh      &serbian_sh  &serbian_ch  &serbian_chj  &none                &none      &none                &none  &none  &french_e_grave  &none  &none  &none
+&none  &none            &none        &none        &none                &none  &none  &none      &none  &none  &none         &none  &none            &none  &none  &none
             >;
         };
 
@@ -58,7 +121,7 @@
 &none   &none     &none         &none         &none         &none          &none                                       &none   &none          &none          &none         &none          &none         &none
 &trans  &none     &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(DLLR)  &kp LS(PRCNT)  &none                                       &none   &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(POUND)  &none         &none
 &trans  &kp BSLH  &kp LS(LPAR)  &kp LS(RPAR)  &kp SQT       &kp GRAVE      &none   &trans  &trans      &trans  &trans  &none   &kp LS(PIPE)   &kp MINUS      &kp EQUAL     &kp LS(PLUS)   &kp LS(EXCL)  &none
-&none   &none     &kp LBKT      &kp RBKT      &kp LS(DQT)   &kp LS(AT)                     &trans      &trans                  &kp LS(TILDE)  &kp LS(TILDE)  &kp LS(LT)    &kp LS(GT)     &trans        &none
+&none   &none     &kp LBKT      &kp RBKT      &kp LS(DQT)   &kp LS(AT)                     &trans      &trans                  &kp LS(TILDE)  &kp LS(UNDER)  &kp LS(LT)    &kp LS(GT)     &trans        &none
 &none   &none     &none         &none         &none                        &trans  &trans  &trans      &trans  &trans  &trans                 &none          &none         &none          &none         &none
             >;
         };
@@ -68,7 +131,7 @@
             bindings = <
 &none      &none  &none  &none     &none      &none  &trans                                                   &none      &none  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &none
 &kp TAB    &none  &none  &none     &none      &none  &none                                                    &none      &none  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &none
-&kp ESC    &none  &none  &none     &none      &none  &tog 0    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
+&kp ESC    &none  &none  &none     &none      &none  &to 0     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
 &kp LSHFT  &none  &none  &none     &none      &none                       &kp HOME      &kp PG_UP                        &none  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
 &mo 2      &none  &none  &kp LEFT  &kp RIGHT         &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0         &kp UP      &kp DOWN      &kp KP_DOT     &none            &mo 2
             >;
@@ -81,7 +144,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&tog 0  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&to 0   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
@@ -92,7 +155,7 @@
 &none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &tog 0
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &tog 5
             >;
         };
     };
