@@ -101,7 +101,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Base";
+            display-name = "default_layer";
             bindings = <
 &none    &kp N1            &kp N2  &kp N3    &kp N4     &kp N5  &none                                                                                                             &none                &kp N6  &kp N7   &kp N8     &kp N9   &kp N0             &none
 &kp TAB  &kp Q             &kp W   &kp F     &kp P      &kp B   &none                                                                                                             &none                &kp J   &kp L    &kp U      &kp Y    &kp SEMICOLON      &none
@@ -112,7 +112,7 @@
         };
 
         lang_mac {
-            display-name = "symbols";
+            display-name = "lang_mac";
             bindings = <
 &none  &none            &none        &none        &none         &none  &none                                       &none   &none  &none  &none            &none  &none  &none
 &none  &none            &none        &none        &none         &none  &none                                       &none   &none  &none  &french_u_grave  &none  &none  &none
@@ -141,6 +141,8 @@
 &none  &none  &none  &none  &none  &none                &none      &none                &none  &none           &none           &none         &none            &none
 &none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none           &none           &none         &none            &none
             >;
+
+            label = "direction";
         };
 
         keypad {
@@ -152,6 +154,8 @@
 &none   &none  &none  &none     &none      &none                  &trans      &trans                  &none  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &none
 &none   &none  &none  &kp LEFT  &kp RIGHT         &trans  &trans  &trans      &trans  &trans  &trans         &kp UP      &kp DOWN      &kp KP_DOT     &none            &none
             >;
+
+            label = "keypad";
         };
 
         fn {
@@ -163,6 +167,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
 &to 0   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
+
+            label = "fn";
         };
 
         none {
@@ -174,6 +180,8 @@
 &none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &tog 6
             >;
+
+            label = "none";
         };
     };
 };
