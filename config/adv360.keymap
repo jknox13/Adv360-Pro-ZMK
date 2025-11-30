@@ -95,6 +95,13 @@
             bindings = <&kp RA(RS(NUMBER_2))>;
             label = "EURO_SYMBOL";
         };
+
+        french_i_trema: french_i_trema {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(U) &kp I>;
+            label = "FRENCH_I_TREMA";
+        };
     };
 
     keymap {
@@ -114,11 +121,11 @@
         lang_mac {
             display-name = "lang_mac";
             bindings = <
-&none  &none            &none        &none        &none         &none  &none                                       &none   &none  &none  &none            &none  &none  &none
-&none  &none            &none        &none        &none         &none  &none                                       &none   &none  &none  &french_u_grave  &none  &none  &none
-&none  &french_a_grave  &none        &french_cs   &none         &none  &none   &trans  &trans      &trans  &trans  &none   &none  &none  &french_e_acute  &none  &none  &none
-&none  &serbian_zh      &serbian_sh  &serbian_ch  &serbian_chj  &none                  &trans      &trans                  &none  &none  &french_e_grave  &none  &none  &none
-&none  &none            &none        &none        &none                &trans  &trans  &trans      &trans  &trans  &trans         &none  &none            &none  &none  &none
+&none  &none            &none        &none        &none         &none  &none                                       &none   &none  &none  &none            &none            &none  &none
+&none  &none            &none        &none        &none         &none  &none                                       &none   &none  &none  &french_u_grave  &none            &none  &none
+&none  &french_a_grave  &none        &french_cs   &serbian_chj  &none  &none   &trans  &trans      &trans  &trans  &none   &none  &none  &french_e_acute  &french_i_trema  &none  &none
+&none  &serbian_zh      &serbian_sh  &serbian_ch  &serbian_dj   &none                  &trans      &trans                  &none  &none  &french_e_grave  &none            &none  &none
+&none  &none            &none        &none        &none                &trans  &trans  &trans      &trans  &trans  &trans         &none  &none            &none            &none  &none
             >;
         };
 
