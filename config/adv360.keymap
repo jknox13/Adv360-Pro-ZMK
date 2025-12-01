@@ -110,11 +110,11 @@
         default_layer {
             display-name = "default_layer";
             bindings = <
-&none    &kp N1            &kp N2   &kp N3    &kp N4     &kp N5  &none                                                                                                             &none                &kp N6  &kp N7   &kp N8     &kp N9   &kp N0             &none
-&kp TAB  &kp Q             &kp W    &kp F     &kp P      &kp B   &none                                                                                                             &none                &kp J   &kp L    &kp U      &kp Y    &kp SEMICOLON      &none
-&kp ESC  &mt LEFT_SHIFT A  &lt 4 R  &lt 3 S   &lt 2 T    &kp G   &to 4                    &kp LGUI              &kp CAPS      &kp C_BACKLIGHT_TOGGLE  &kp RGUI                     &none                &kp M   &lt 2 N  &kp E      &kp I    &mt RIGHT_SHIFT O  &none
-&none    &kp Z             &kp X    &kp C     &lt 1 D    &kp V                                                  &kp HOME      &kp PG_UP                                                                 &kp K   &lt 1 H  &kp COMMA  &kp DOT  &kp FSLH           &none
-&to 5    &none             &none    &kp LEFT  &kp RIGHT          &mt LCTRL LS(BACKSPACE)  &mt LEFT_ALT LS(TAB)  &kp END       &kp PG_DN               &mt LC(LS(RIGHT_ALT)) ENTER  &mt RCTRL LS(SPACE)          &kp UP   &kp DOWN   &none    &none              &tog 6
+&none    &kp N1            &kp N2   &kp N3    &kp N4     &kp N5  &none                                                                                             &none            &kp N6  &kp N7   &kp N8     &kp N9   &kp N0             &none
+&kp TAB  &kp Q             &kp W    &kp F     &kp P      &kp B   &none                                                                                             &none            &kp J   &kp L    &kp U      &kp Y    &kp SEMICOLON      &none
+&kp ESC  &mt LEFT_SHIFT A  &lt 4 R  &lt 3 S   &lt 2 T    &kp G   &to 4                &kp LGUI          &kp CAPS      &kp C_BACKLIGHT_TOGGLE  &kp RGUI             &none            &kp M   &lt 2 N  &kp E      &kp I    &mt RIGHT_SHIFT O  &none
+&none    &kp Z             &kp X    &kp C     &lt 1 D    &kp V                                          &kp HOME      &kp PG_UP                                                     &kp K   &lt 1 H  &kp COMMA  &kp DOT  &kp FSLH           &none
+&to 5    &none             &none    &kp LEFT  &kp RIGHT          &mt LCTRL BACKSPACE  &mt LEFT_ALT TAB  &kp END       &kp PG_DN               &mt RIGHT_ALT ENTER  &mt RCTRL SPACE          &kp UP   &kp DOWN   &none    &none              &tog 6
             >;
         };
 
