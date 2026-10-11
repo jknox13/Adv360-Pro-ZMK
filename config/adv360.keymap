@@ -127,7 +127,7 @@
         default_layer {
             display-name = "default_layer";
             bindings = <
-&none    &kp N1            &kp N2   &kp N3    &kp N4     &kp N5  &to 7                                                                                             &mo 6            &kp N6  &kp N7   &kp N8     &kp N9   &kp N0             &none
+&none    &kp N1            &kp N2   &kp N3    &kp N4     &kp N5  &to 7                                                                                             &mo 6            &kp N6  &kp N7   &kp N8     &kp N9   &kp N0             &kp C_SLEEP
 &kp TAB  &kp Q             &kp W    &kp F     &kp P      &kp B   &none                                                                                             &none            &kp J   &kp L    &kp U      &kp Y    &kp SEMICOLON      &none
 &kp ESC  &mt LEFT_SHIFT A  &lt 4 R  &lt 3 S   &lt 2 T    &kp G   &none                &kp LGUI          &kp CAPS      &kp C_BACKLIGHT_TOGGLE  &mt RGUI ESC         &none            &kp M   &lt 2 N  &kp E      &kp I    &mt RIGHT_SHIFT O  &none
 &none    &kp Z             &kp X    &kp C     &lt 1 D    &kp V                                          &kp HOME      &kp PG_UP                                                     &kp K   &lt 1 H  &kp COMMA  &kp DOT  &kp FSLH           &none
