@@ -127,7 +127,7 @@
         default_layer {
             display-name = "default_layer";
             bindings = <
-&none    &kp N1            &kp N2   &kp N3    &kp N4     &kp N5  &to 7                                                                                             &mo 6            &kp N6  &kp N7   &kp N8     &kp N9   &kp N0             &kp C_SLEEP
+&none    &kp N1            &kp N2   &kp N3    &kp N4     &kp N5  &to 6                                                                                             &mo 7            &kp N6  &kp N7   &kp N8     &kp N9   &kp N0             &kp C_SLEEP
 &kp TAB  &kp Q             &kp W    &kp F     &kp P      &kp B   &none                                                                                             &none            &kp J   &kp L    &kp U      &kp Y    &kp SEMICOLON      &none
 &kp ESC  &mt LEFT_SHIFT A  &lt 4 R  &lt 3 S   &lt 2 T    &kp G   &none                &kp LGUI          &kp CAPS      &kp C_BACKLIGHT_TOGGLE  &mt RGUI ESC         &none            &kp M   &lt 2 N  &kp E      &kp I    &mt RIGHT_SHIFT O  &none
 &none    &kp Z             &kp X    &kp C     &lt 1 D    &kp V                                          &kp HOME      &kp PG_UP                                                     &kp K   &lt 1 H  &kp COMMA  &kp DOT  &kp FSLH           &none
@@ -185,7 +185,7 @@
         fn {
             display-name = "Fn";
             bindings = <
-&none  &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none                                                    &none  &none  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_STOP  &none
+&none  &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none                                                    &mo 7  &none  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_STOP  &none
 &none  &none           &none              &none            &none                 &none                 &none                                                    &none  &none  &kp F7      &kp F8            &kp F9      &kp F11     &none
 &none  &kp LEFT_SHIFT  &none              &kp LCTRL        &kp LEFT_ALT          &none                 &none  &kp LEFT_CONTROL  &kp LEFT_ALT      &none  &none  &none  &none  &kp F4      &kp F5            &kp F6      &kp F10     &none
 &none  &none           &none              &none            &none                 &none                                          &none             &none                &none  &kp F1      &kp F2            &kp F3      &kp F12     &none
@@ -193,6 +193,16 @@
             >;
 
             label = "fn";
+        };
+
+        qwerty {
+            bindings = <
+&kp EQUAL  &kp N1     &kp N2    &kp N3          &kp N4           &kp N5  &to 0                                                         &mo 7      &kp N6  &kp N7        &kp N8          &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E           &kp R            &kp T   &none                                                         &none      &kp Y   &kp U         &kp I           &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D           &kp F            &kp G   &none     &kp LCTRL   &kp LALT      &kp RIGHT_GUI  &kp RALT   &none      &kp H   &kp J         &kp K           &kp L     &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z      &kp X     &kp C           &kp V            &kp B                         &kp HOME      &kp PAGE_UP                          &kp N   &kp M         &kp COMMA       &kp DOT   &kp FSLH  &kp RSHFT
+&none      &kp GRAVE  &kp CAPS  &kp LEFT_ARROW  &kp RIGHT_ARROW          &kp BSPC  &kp DELETE  &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE          &kp UP_ARROW  &kp DOWN_ARROW  &kp LBKT  &kp RBKT  &none
+            >;
         };
 
         mod {
@@ -206,24 +216,14 @@
             >;
         };
 
-        qwerty {
-            bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3          &kp N4           &kp N5  &to 0                                                         &mo 6      &kp N6  &kp N7        &kp N8          &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E           &kp R            &kp T   &none                                                         &none      &kp Y   &kp U         &kp I           &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D           &kp F            &kp G   &none     &kp LCTRL   &kp LALT      &kp RCTRL      &kp RALT   &none      &kp H   &kp J         &kp K           &kp L     &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z      &kp X     &kp C           &kp V            &kp B                         &kp HOME      &kp PAGE_UP                          &kp N   &kp M         &kp COMMA       &kp DOT   &kp FSLH  &kp RSHFT
-&none      &kp GRAVE  &kp CAPS  &kp LEFT_ARROW  &kp RIGHT_ARROW          &kp BSPC  &kp DELETE  &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE          &kp UP_ARROW  &kp DOWN_ARROW  &kp LBKT  &kp RBKT  &none
-            >;
-        };
-
         none {
-            display-name = "symbols";
+            display-name = "none";
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &mo 7  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &tog 8
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &tog 0
             >;
 
             label = "none";
